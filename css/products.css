@@ -1,0 +1,13 @@
+body {
+    background: #f2f2f2;
+}
+.goBack {
+    cursor: pointer;
+}
+.search {
+    cursor: pointer;
+}
+.cart span{
+    top: 0;
+    font-size: 10px;
+}

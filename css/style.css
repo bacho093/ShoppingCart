@@ -1,0 +1,67 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to right, rgb(41, 11, 75), rgb(31, 20, 44));
+}
+.box {
+    height: 25vh;
+}
+.row > div {
+    position: relative;
+    overflow: hidden;
+}
+.box1 {
+    background: #bbbcd0;
+}
+.box2 {
+    background: #61a592;
+}
+.box3 {
+    background: #c59693;
+}
+.box4 {
+    background: #527f92;
+}
+.box5 {
+    background: #2a6f58;
+}
+.box6 {
+    background: #8eafc6;
+}
+.box7 {
+    background: #dec3b6;
+}
+.content {
+    padding-left: 12%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.ripple {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.384);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: ripple 2s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes ripple {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 2000px;
+        height: 2000px;
+        opacity: 0;
+    }
+}
