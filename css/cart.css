@@ -1,0 +1,61 @@
+.goBack {
+    font-size: 12px;
+    transition: 0.3s ease;
+    color: rgb(116, 114, 114);
+    cursor: pointer;
+}
+.goBack i {
+    font-size: 13px;
+}
+.goBack:hover {
+    transform: translateX(-5%);
+    color: rgb(32, 32, 32);
+}
+.product1 {
+    background: #bbbcd0;
+}
+.product2 {
+    background: #61a592;
+}
+.product3 {
+    background: #c59693;
+}
+.product4 {
+    background: #527f92;
+}
+.img {
+    width: 140px;
+    height: 160px;
+    line-height: 160px;
+}
+.val input {
+    outline: none;
+    pointer-events: none;
+}
+/* Chrome, Safari, Edge, Opera */
+.val input::-webkit-outer-spin-button,
+.val input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.val input[type=number] {
+  -moz-appearance: textfield;
+}
+.quantity .minus, 
+.quantity .plus {
+    cursor: pointer;
+}
+.remove {
+    cursor: pointer;
+    font-size: 14px;
+}
+.summary {
+    background: #f6f6f6;
+    position: sticky;
+    top: 0;
+}
+.giveCode input {
+    outline: none;
+}

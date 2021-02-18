@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Bacho</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="w-100 pt-5 d-flex justify-content-between align-items-center pe-0 me-0">
+            <h2 class="text-left text-dark font-weight-bold">Shopping Cart</h2>
+            <div class="goBack font-weight-bold px-5" onclick="goBack()">
+                <i class="fas fa-long-arrow-alt-left"></i> 
+            Back To Shop</div>
+        </div>
+
+
+        <div class="row my-5">
+            <div class="col-md-8 mx-0 px-0">
+                <div class="d-flex justify-content-between align-items-center py-4 px-5 border-top">
+                    <div class="product d-flex align-items-center">
+                        <div class="img product3 text-center text-light rounded">Product</div>
+                        <div class='mx-3'>
+                            <p class='text-muted'>Category</p>
+                            <p class='font-weight-bold'>Title - 1</p>
+                        </div>
+                    </div>
+                    <div class="quantity d-flex align-items-center">
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                        <div class="val text-center px-3">1</div>
+                        <div class="plus"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="price font-weight-bold">
+                        $123
+                    </div>
+                    <div class="remove p-2">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center py-4 px-5 border-top">
+                    <div class="product d-flex align-items-center">
+                        <div class="img product2 text-center text-light rounded">Product</div>
+                        <div class='mx-3'>
+                            <p class='text-muted'>Category</p>
+                            <p class='font-weight-bold'>Title - 2</p>
+                        </div>
+                    </div>
+                    <div class="quantity d-flex align-items-center">
+                        <div class="minus"><i class="fas fa-minus"></i></div>
+                        <div class="val text-center px-3">1</div>
+                        <div class="plus"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="price font-weight-bold">
+                        $123
+                    </div>
+                    <div class="remove p-2">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 px-0 mx-0">
+                <div class="summary px-4">
+                    <h2 class="text-left text-dark font-weight-bold pb-4">Summary</h2>
+                    <div class="countItems d-flex align-items-center justify-content-between border-top p-3">
+                        <div>Items 3</div>
+                        <div>$246</div>
+                    </div>
+                    <div class="shipping d-flex align-items-center justify-content-between border-top p-3">
+                        <p>Shipping</p>
+                        <p>$5</p>
+                    </div>
+                    <div class="giveCode border-top p-3">
+                        <p>Give Code</p>
+                        <input type="text" class='border w-100 py-1 px-2' placeholder="Enter Your Code">
+                    </div>
+                    <div class="total d-flex align-items-center justify-content-between border-top p-3">
+                        <p>Total Price</p>
+                        <p>$251</p>
+                    </div>
+                    <div class="checkout">
+                        <button class="btn btn-success py-2 w-100">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script/cart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</script>
+</html>
