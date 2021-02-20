@@ -28,3 +28,6 @@ body {
 .product4 {
     background: #527f92;
 }
+.addBtn i {
+    pointer-events: none;
+}

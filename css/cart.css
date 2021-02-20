@@ -59,3 +59,9 @@
 .giveCode input {
     outline: none;
 }
+.quantity i {
+    pointer-events: none;
+}
+.remove i {
+    pointer-events: none;
+}
