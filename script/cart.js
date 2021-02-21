@@ -138,3 +138,13 @@ function removeItem() {
         });
     }
 }
+
+function summary() {
+    var countItems = document.querySelectorAll('.countItems > div');
+
+    for(let i = 0; i < countItems.length; i++) {
+        var items = countItems[0];
+        var itemsTotal = countItems[1];
+    }
+}
+summary();
