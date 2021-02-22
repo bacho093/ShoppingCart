@@ -2,6 +2,71 @@ body {
     font-family: 'Dancing Script', cursive;
     background: linear-gradient(to right, rgb(41, 11, 75), rgb(31, 20, 44));
 }
+.nav {
+    border-bottom: 1px solid #D5C292;
+    z-index: 99;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.nav.active {
+    transform: translateY(0%);
+    opacity: 1;
+}
+.nav ul li {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.nav ul li:hover a {
+    color: #D5C292;
+}
+.burger {
+    position: fixed;
+    right: 10%;
+    top: 3%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.918);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.burger.active {
+    animation: burger 0.5s ease forwards;
+}
+@keyframes burger {
+    0% {
+        background: rgba(255, 255, 255, 0.918);
+    }
+    100% {
+        background: rgba(243, 248, 167, 0.918);
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+}
+.burger > div {
+    height: 2px;
+    background: #111110;
+    width: 18px;
+    box-shadow: 2px 2px 10px rgba(68, 68, 68, 0.5);
+    transition: 0.5s ease;
+}
+.burger .line2 {
+    margin: 3px 0;
+}
+.active .line1 {
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+.active .line2 {
+    transform: translateX(100%);
+    opacity: 0;
+}
+.active .line3 {
+    transform: rotate(45deg) translate(-3px, -3px);
+}
 .box {
     height: 25vh;
 }

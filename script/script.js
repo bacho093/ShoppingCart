@@ -19,3 +19,12 @@ for(let i = 0; i < box.length; i++) {
         }, 2000);
     });
 }
+
+// NAVIGATION 
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+
+burger.addEventListener('click', function() {
+    nav.classList.toggle('active');
+    burger.classList.toggle('active');
+});
